@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+
+}
+#navbar input{
+    right: 2px;
+    padding: 6px 91px;
+    position: absolute;
+    border-radius: 20px;
+    margin-right: 92px;
+}
+#navbar input:hover{
+    cursor: pointer;
+    background:white;
+    color: rgb(22, 19, 19);
+    font-size: large;
+    border-color: aqua;
+}
+
+#navbar::before{
+    content: "";
+    background: rgb(20, 20, 20);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+/* navigation bar: logo and img/ */
+
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    list-style:none;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#navbar button{
+    right: 2%;
+    /* color: black; */
+    margin: 2px 1px 0px 638px;
+    padding: 6px;
+    width: 75px;
+    border: 2px solid black;
+}
+
+#navbar button:hover{
+    font-size: larger;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("img/indian.jpeg") no-repeat center center/cover;
+    height: 85%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90; 
+}
+
+
+#home h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+}
+#home p{
+    color:white;
+     font-family: 'Bree Serif', serif;
+    text-align: center;
+    
+}
+
+/* services section */
+.services{
+    margin: 34px;
+    display: flex;
+    align-items: center;
+}
+.services .box{ 
+    border: 2px solid black;
+    padding: 33px;
+    margin: 2px 3px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.services .box img{ 
+   height: 100px;
+   margin: auto;
+   display: block;
+   cursor: pointer;
+}
+
+.services  .box p{
+ 
+    font-family: 'Bree Serif', serif;
+}
+/* client section */
+#client-section{
+    font-family: 'Bree Serif', serif;
+    position: relative;
+    height: 340px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background:url('img/good.jpeg');
+    z-index: -1;
+    opacity: 0.91;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.client-item{
+    padding: 30px;
+}
+#clients img{
+    cursor: pointer;
+    height: 130px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: o.8;
+    background: url('img/contact.jpeg') ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    
+}
+
+
+
+/* utility classes */
+.h-primary{
+    font-size:3.2rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size:2.2rem;
+    padding: 12px;
+}
+
+.btn{
+    font-size: 1.4rem;
+    padding: 1px 10px;
+    background-color: brown;
+    margin: 17px;
+    color: white;
+    cursor:pointer;
+    border :2px solid white;
+    border-radius: 10px;
+    
+}
+.center{
+    text-align: center;
+}
+.btn-sumit{
+    font-size: 1.4rem;
+    width: 92%;
+    padding: 5px 17px;
+    background-color: brown;
+    margin: 11px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+ footer{
+    background: #000;
+    color: white;
+    /* padding: ; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+ }
