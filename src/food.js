@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/contactfood')
 const bodyparser =require('body-parser');
 const app = express()
-const port = 3000
+const port =process.env.PORT  || 8000;
 
 // define mongoose mongoose.Schema
 const contactSchema = new mongoose.Schema({
@@ -40,5 +40,5 @@ mydata.save().then((req,res)=>{
 // })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(` app listening at http://localhost:${port}`)
 })

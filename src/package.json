@@ -4,7 +4,8 @@
   "description": "this for ordering food",
   "main": "food.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":  "node src/food.js"
   },
   "author": "yogi",
   "license": "ISC",
